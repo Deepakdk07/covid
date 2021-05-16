@@ -50,9 +50,9 @@ function App() {
     
     { !show ?
     <div className = "input">
-    <p>{value.label}</p>
-    <Select options={choice} value={value} onChange={(value) => setValue(value)} />
-    <button onClick = {onSubmit}>Get data</button>
+    {value ? <p>{value.label}</p> : <p>Select the Country</p>}
+    <Select options={choice} value={value} onChange={(value) => setValue(value)} important />
+    {value ? <button onClick = {onSubmit}>Get data</button> : null}
     </div>
      :
      <div className = "container">
@@ -61,7 +61,8 @@ function App() {
     <Select styles = {{width :"100px"}} options={choice} value={value} onChange={(value) => setValue(value)} />
     <button onClick = {onSubmit}>Get data</button>
     </div>
-    <h1>{ data && data.country} ({data.code && data.code})</h1>
+    {
+      data.country ?  <div><h1>{ data && data.country} ({data.code && data.code})</h1>
     <p>Deaths : {data.deaths && data.deaths}</p>
     <p>Confirmed Cases : {data.confirmed && data.confirmed}</p>
     <p>Critical : {data.critical && data.critical}</p>
@@ -69,7 +70,10 @@ function App() {
     <p>Recovery Rate : {(data.recovered / data.confirmed * 100).toFixed(2)} %</p>
     <p>Death Rate : {(data.deaths / data.confirmed * 100).toFixed(2)} %</p>
     <p>Critical Rate : {(data.critical / data.confirmed * 100).toFixed(2)} %</p>
-    </div>
+    </div> : 
+    'Loading'
+    }
+   </div>
     }
     
 

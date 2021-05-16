@@ -29,8 +29,9 @@
   height: 150px;
   background-color: teal;
   box-shadow: 20px 20px 60px #006d6d, -20px -20px 60px #009393;
+  margin-top: 50px;
 
-  color: wheat;
+  /* color: wheat; */
   display: flex;
   justify-content: center;
   align-items: center;
