@@ -34,12 +34,15 @@
   box-shadow: 20px 20px 60px #006d6d, -20px -20px 60px #009393;
   margin-top: 50px;
 
-  /* color: wheat; */
+  color: gray;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 10px;
+}
+.input p {
+  color: wheat;
 }
 .css-2b097c-container {
   width: 100%;
