@@ -45,7 +45,7 @@ function App() {
 
   return (
     <div className="app">
-    <h1>Covid Cases Info App</h1>
+    <h1 style = {{marginBottom : "50px"}}>Covid Cases Info App</h1>
     
     
     { !show ?

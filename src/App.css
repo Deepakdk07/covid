@@ -16,13 +16,16 @@
   border-radius: 50px;
   background: #008080;
   box-shadow: 20px 20px 60px #006d6d, -20px -20px 60px #009393;
-  color: wheat;
+  color: gray;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 50px;
   text-align: center;
+}
+.container p, h1{
+  color: wheat;
 }
 .input {
   width: 300px;
