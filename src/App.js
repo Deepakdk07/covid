@@ -46,7 +46,7 @@ function App() {
   return (
     <div className="app">
     <h1>Covid Cases Info App</h1>
-    {data.lastUpdate ? <p>Last updated : {date.toLocaleDateString()} {date.toLocaleTimeString()}</p> : null}
+    
     
     { !show ?
     <div className = "input">
@@ -57,6 +57,7 @@ function App() {
      :
      <div className = "container">
     <div style = {{width:"80%"}}>
+    <p>{data.lastUpdate ? <p>Last updated : {date.toLocaleDateString()} {date.toLocaleTimeString()}</p> : null}</p>
     <p>{value.label}</p>
     <Select styles = {{width :"100px"}} options={choice} value={value} onChange={(value) => setValue(value)} />
     <button onClick = {onSubmit}>Get data</button>
