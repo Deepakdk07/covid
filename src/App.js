@@ -72,7 +72,7 @@ function App() {
     <p>Death Rate : {(data.deaths / data.confirmed * 100).toFixed(2)} %</p>
     <p>Critical Rate : {(data.critical / data.confirmed * 100).toFixed(2)} %</p>
     </div> : 
-    'Loading'
+    <p>Loading....</p>
     }
    </div>
     }
