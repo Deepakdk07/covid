@@ -16,7 +16,7 @@ const Card = ({data, stateCode, input}) => {
    })
 
   }
-  ,[]
+  ,[stateCode]
   )
 
 

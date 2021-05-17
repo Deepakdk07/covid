@@ -3,18 +3,18 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import Card from './Card'
 // import states from './states'
-import { CountryDropdown, RegionDropdown, CountryRegionData } from 'react-country-region-selector';
+// import { CountryDropdown, RegionDropdown, CountryRegionData } from 'react-country-region-selector';
 import { Link } from 'react-router-dom';
 
 const IndianData = () => {
     const [data, setData] = useState({})
-    const [error, setError] = useState({})
+    // const [error, setError] = useState({})
     const [input, setInput] = useState()
 
     useEffect(() =>{
       // const click = () => {
      axios.get('https://api.covid19india.org/v4/min/data.min.json').then(data => 
-    setData(data.data)).catch(error => setError(error.message)) 
+    setData(data.data)).catch(error => console.log(error.message)) 
     // }
     },[])
     
