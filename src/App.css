@@ -10,6 +10,9 @@
   color: wheat;
   justify-content: space-evenly;
 }
+h1{
+  text-align: center;
+}
 input:focus{
   border: none;
   height: 30px;

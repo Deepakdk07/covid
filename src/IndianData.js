@@ -24,7 +24,7 @@ const IndianData = () => {
         <div className = "app">
       
 
-        <h1 >Indian Covid Data Info App</h1>  
+        <h1>Indian Covid Data</h1>  
         <Link to = "/world" style = {{textDecoration :"none", color: "wheat"}}><p>Switch To World Version</p></Link>
         <Link to = "/" style = {{textDecoration :"none", color: "wheat",marginBottom : "50px"}}><p>Home</p></Link>
         <div className = "container">
