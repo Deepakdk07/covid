@@ -42,7 +42,7 @@ const Card = ({data, stateCode, input}) => {
       <p>Total Deaths Recorded : {data.total && data.total.deceased}</p>
       <p>Total Recovered Patients : {data.total && data.total.recovered}</p>
       <p>Total Tested Person : {data.total && data.total.tested}</p>
-      <p>Total confirmed cases Rate : {data.total && data.total.confirmed/data.total && data.total.tested * 100}</p>
+      <p>Total confirmed cases Rate : {(data.total && data.total.confirmed/data.total.tested * 100).toFixed(2)} %</p>
       <p>Total Vaccinated : {data.total && data.total.vaccinated}</p>
       {/* <hr /> */}
      </div>
