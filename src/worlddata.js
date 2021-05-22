@@ -44,8 +44,8 @@ const Worlddata = () => {
         <div className="app">
         
     <h1>World Covid Data</h1>
-    <Link to = "/india" style = {{textDecoration :"none", color: "wheat"}}><p>Switch To Indian Version</p></Link>
-        <Link to = "/india" style = {{textDecoration :"none", color: "wheat",marginBottom : "50px"}}><p>Home</p></Link>
+    <Link to = "/india" style = {{textDecoration :"none", color: "white"}}><p>Switch To Indian Version</p></Link>
+        <Link to = "/india" style = {{textDecoration :"none", color: "white",marginBottom : "50px"}}><p>Home</p></Link>
     
     { !show ?
     <div className = "input">

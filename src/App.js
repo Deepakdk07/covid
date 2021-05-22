@@ -8,6 +8,7 @@ import IndianData from './IndianData';
 function App() {
 
   return (
+    <div className = "main">
     <Router>
     
     <Route exact path = '/'>
@@ -22,6 +23,7 @@ function App() {
     
 
     </Router>
+    </div>
   );
 }
 

@@ -31,7 +31,7 @@ const Card = ({data, stateCode, input}) => {
   
     {
       stateCode[0] === input  ?
-      <div>
+      <div className = "container">
       
       <h1>{state} ({stateCode})</h1>
      {data.delta ?  <p>Today's Confirmed : {data.delta && data.delta.confirmed}</p> : null }

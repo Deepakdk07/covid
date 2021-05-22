@@ -5,7 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #06202A;
+  background: url(https://images.unsplash.com/photo-1583423230902-b653abc541eb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1789&q=80);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
 
 }
 
@@ -23,7 +25,7 @@ body::-webkit-scrollbar-track {
 }
  
 body::-webkit-scrollbar-thumb {
-  background-color: wheat;
+  background-color: #7D2921;
   border-radius: 10px;
   /* outline: 1px solid slategrey; */
 }
