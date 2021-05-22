@@ -11,14 +11,14 @@ const IndianData = () => {
     // const [error, setError] = useState({})
     const [input, setInput] = useState()
 
-    // useEffect(() =>{
-    //   // const click = () => {
-    //  axios.get('https://api.covid19india.org/v4/min/data.min.json').then(data => 
-    // setData(data.data)).catch(error => console.log(error.message)) 
-    // // }
-    // },[])
+    useEffect(() =>{
+      // const click = () => {
+     axios.get('https://api.covid19india.org/v4/min/data.min.json').then(data => 
+    setData(data.data)).catch(error => console.log(error.message)) 
+    // }
+    },[])
     
-    axios.get('https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByPin?pincode=827013&date=23-05-2021').then(() => console.log(data))
+    // axios.get('https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByPin?pincode=827013&date=23-05-2021').then(() => console.log(data))
   
   
     return (
